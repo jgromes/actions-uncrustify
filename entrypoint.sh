@@ -5,7 +5,7 @@ set -e
 
 cd "$GITHUB_WORKSPACE"
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
-DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+DEFAULT_BRANCH=main
 
 RED="\u001b[31m"
 GREEN="\u001b[32m"
